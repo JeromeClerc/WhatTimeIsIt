@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What Time is It ?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/jquery2.0.3.js"></script>
+        <script src="js/whattimeisit.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.wtii').whattimeisit();
+                /*
+                 WhatTimeIsIt comporte un seul paramètre.
+                 Par défaut, il affiche les heures 'PM'.
+                 
+                 Pour afficher les heures 'AM' en premier,
+                 utiliser le paramétrage ci-dessous
+        
+                 $('.wtii').whattimeisit({ampm : 'AM'});
+                */
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>What Time is It ?</h1>
+        </header>
+        <section>
+            <article>
+                <form>
+                    <!-- Le champ qui renseigne l'heure nécessite juste la class 'wtii' -->
+                    <input type="text" name="time" class="wtii" value="" placeholder="00:00">
+                </form>
+            </article>    
+        </section>    
+        
+    </body>
+</html>

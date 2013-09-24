@@ -1,0 +1,116 @@
+/* 
+    Document   : styles
+    Created on : 11 sept. 2013, 11:14:37
+    Author     : Jerome Clerc
+*/
+
+/* INDEX */
+header {
+    width: 300px;
+    margin: 100px auto;
+}
+section {
+    width: 300px;
+    margin: auto;
+}
+
+/* WHAT TIME IS IT ? */
+#wrap-wtii {
+    width: 90px;
+    position: relative;
+    font-family: Verdana;
+}
+    #wrap-wtii input.wtii {
+        width: 60px;
+        height: 24px;
+        text-align: center;
+        border-radius: 2px 2px 2px 2px;
+        -moz-border-radius: 2px 2px 2px 2px;
+        -webkit-border-radius: 2px 2px 2px 2px;
+        border: 1px solid #8691A2;
+    }
+    #wrap-wtii img.wtii-trigger {
+        float: right;
+        cursor: pointer;
+    }
+.wtii-background {
+    width: 200px;
+    height: 200px;
+    background: #e9eff7;
+    border: 1px solid #8691A2;
+    position: absolute;
+    top: -86px;
+    left: -30px;
+    display: none;
+}
+.wtii-sun,
+.wtii-moon {
+    padding: 2px 3px;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    font-size: 0.6rem;
+    color: #8792a2;
+}
+    .wtii-sun:hover,
+    .wtii-moon:hover {
+        background: #b1c0d5;
+        color: #fff;
+    }
+    .wtii-sun {
+        top: -15px;
+        left: 70px;
+    }
+    .wtii-moon {
+        top: -15px;
+        left: 50px;
+    }
+    .active {
+        background: #b1c0d5;
+        color: #fff;
+    }
+.wtii-close {
+    width: 20px;
+    height: 20px;
+    background: #8691A2;
+    margin: 46% auto;
+    text-align: center;
+    display: none;
+}
+    .wtii-close img {
+        padding-top: 2px;
+        cursor: pointer;
+    }
+.wtii-sloth,
+.wtii-slotm {
+    width: 30px;
+    height: 30px;
+    background: #8792a2;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    cursor: pointer;
+}
+    .wtii-sloth:hover,
+    .wtii-slotm:hover {
+        color: #8792a2;
+        background: #b1c0d5;
+    }
+    .wtii-sloth span,
+    .wtii-slotm span {
+        left: 7%;
+    }
+.slot-num {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    top: 3px;
+    left: 30%;
+}
+.round {
+    border-radius: 50% 50% 50% 50%;
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+}
+/* #WHAT TIME IS IT ? */
