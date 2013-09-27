@@ -3,14 +3,25 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	
+	<script src="https://github.com/JeromeClerc/WhatTimeIsIt/blob/master/js/jquery2.0.3.js"></script>
+	<script src="https://github.com/JeromeClerc/WhatTimeIsIt/blob/master/js/whattimeisit.min.js"></script>
+	
+	
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+	  <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" type="text/css" href="https://github.com/JeromeClerc/WhatTimeIsIt/blob/master/css/styles.css" media="screen" />	
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <title>Whattimeisit by JeromeClerc</title>
+	<script>
+        $(document).ready(function() {
+            $('.wtii').whattimeisit();
+        });
+    </script>
   </head>
 
   <body>
@@ -32,43 +43,70 @@
 
         <section id="main_content">
           <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Demo</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>If your customers have to set an hour in a form. Use <strong>WhatTimeIsIt</strong> to set it the easiest way</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+<pre><code>
+<div style="width:100px;margin:auto;">
+<form>
+    <input type="text" name="time" class="wtii" value="" placeholder="00:00">
+</form>
+</div>
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>Just click and select. That's easy.</p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Compatibility</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>With all the main browsers. Developped with jQuery 2.0.3.</p>
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>The Code</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Download the package and include it in your project this way. <u>Do not forget the pics</u>.</p>
+
+The HTML :
+<pre><code>
+&lt;link rel="stylesheet" href="stylesheets/styles.css">
+
+&lt;form>
+  &lt;input type="text" name="time" class="wtii" placeholder="00:00">
+&lt;/form>
+</code></pre>
+
+The JS without parameters :
+<pre><code>
+&lt;script>
+  $(document).ready(function() {
+    // By default, the script start at 12:00
+    $('.wtii').whattimeisit();
+  });
+&lt;/script>
+</code></pre>
+
+The JS witht parameters :
+<pre><code>
+&lt;script>
+  $(document).ready(function() {
+    // The ampm variable allow the script to start hours at 0:00 or 12:00
+    $('.wtii').whattimeisit({ampm : 'AM'});
+  });
+&lt;/script>
+</code></pre>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Have fun</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>Don't hesitate to comment, submit issues or report some bugs you may find.</p>
+
         </section>
 
         <footer>
           Whattimeisit is maintained by <a href="https://github.com/JeromeClerc">JeromeClerc</a><br>
           This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
         </footer>
-
         
       </div>
     </div>
